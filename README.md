@@ -6,7 +6,7 @@ Face detection is a face recognition system for managing attendance using a webc
 
 - Backend: FastAPI service with OpenCV YuNet and SFace for face detection and recognition
 - Frontend: Vite + React single-page application with three main views
-- Storage: Registered face images and metadata are stored locally for the application# 🎯 Face Detection & Attendance System
+- Storage: Registered face images and metadata are stored locally for the application# Face Detection.
 
 A real-time face recognition system for managing attendance using a webcam and a modern web interface. It combines a **FastAPI** backend with a **React** frontend to support live recognition, person registration, and attendance logging.
 
@@ -14,7 +14,6 @@ A real-time face recognition system for managing attendance using a webcam and a
 ![Node](https://img.shields.io/badge/Node.js-18%2B-green)
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688)
 ![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
