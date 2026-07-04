@@ -228,12 +228,3 @@ npm run dev
 ```
 
 The frontend runs at http://localhost:5173 and connects to the backend API automatically.
-
-## Production Build
-
-```bash
-cd frontend
-npm run build
-```
-
-The build output is generated in the frontend/dist directory for deployment.
