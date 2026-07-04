@@ -1,0 +1,30 @@
+# ── Python / backend ──
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+*.egg-info/
+
+# Auto-downloaded ONNX models (~37MB, re-downloaded on first run)
+backend/models/
+
+# Registered face photos (user data — don't commit real people's photos)
+backend/known_faces/
+
+# ── Node / frontend ──
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── Env files (secrets / machine-specific config) ──
+.env
+.env.local
+*.env
+!.env.example
+
+# ── OS / editor cruft ──
+.DS_Store
+.vscode/
+.idea/
+*.log

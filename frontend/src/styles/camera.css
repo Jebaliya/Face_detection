@@ -1,0 +1,63 @@
+.camera-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.camera-container {
+  position: relative;
+  width: 100%;
+  background: #000;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.camera-container video,
+.camera-container img.static-upload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.camera-container video {
+  z-index: 1;
+}
+.camera-container img.static-upload {
+  z-index: 2;
+}
+
+.camera-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.camera-status {
+  padding: 0.75rem 1.5rem;
+  background: #fafafa;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-dim);
+}
+.status-dot.online {
+  background: var(--success);
+  box-shadow: 0 0 8px var(--success);
+}

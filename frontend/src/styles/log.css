@@ -1,0 +1,53 @@
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  padding: 1rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+  background: #fafafa;
+}
+td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+tbody tr {
+  transition: var(--transition);
+}
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-present {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+.count-badge {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dim);
+}

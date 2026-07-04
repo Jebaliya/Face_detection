@@ -1,0 +1,94 @@
+/* ── Typography & Headers ── */
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.header-content p {
+  color: var(--text-dim);
+  font-size: 1.1rem;
+}
+
+/* ── Navigation ── */
+.nav-bar {
+  display: inline-flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  background: var(--surface);
+  padding: 0.5rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+.nav-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.nav-link:hover {
+  color: var(--text);
+  background: var(--bg);
+}
+.nav-link.active {
+  color: #fff;
+  background: var(--accent);
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+}
+
+/* ── Layout ── */
+main {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── Toast ── */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--text);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 1000;
+}
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.toast-success {
+  background: var(--success);
+}
+.toast-error {
+  background: var(--danger);
+}
+.toast-info {
+  background: var(--text);
+}
