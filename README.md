@@ -1,6 +1,6 @@
-# Face Attendance
+# Face detection
 
-Face Attendance is a full-stack face recognition system for managing attendance using a webcam and a modern web interface. It combines a FastAPI backend with a React frontend to support live recognition, person registration, and attendance logging.
+Face detection is a face recognition system for managing attendance using a webcam and a modern web interface. It combines a FastAPI backend with a React frontend to support live recognition, person registration, and attendance logging.
 
 ## Overview
 
