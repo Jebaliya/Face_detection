@@ -1,0 +1,24 @@
+services:
+  backend:
+    build: ./backend
+    container_name: face-attendance-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist downloaded models + registered face photos across restarts
+      - backend-models:/app/models
+      - backend-known-faces:/app/known_faces
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: face-attendance-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  backend-models:
+  backend-known-faces:
